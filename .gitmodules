@@ -1,3 +1,6 @@
 [submodule "submodules/hidapi"]
 	path = submodules/hidapi
 	url = git://github.com/rpavlik/hidapi.git
+[submodule "submodules/c_module"]
+	path = submodules/c_module
+	url = https://github.com/bilke/vrpn_c_module.git

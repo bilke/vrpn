@@ -14,3 +14,8 @@ if(VRPN_USE_LOCAL_HIDAPI)
 	set(HIDAPI_LIBRARIES ${HIDAPI_LIBRARIES} PARENT_SCOPE)
 	set(HIDAPI_SOURCES ${HIDAPI_SOURCES} PARENT_SCOPE)
 endif()
+
+option(VRPN_USE_C_MODULE "Should the C module be built?" OFF)
+if(VRPN_USE_C_MODULE)
+	add_subdirectory(c_module)
+endif()
